@@ -22,20 +22,20 @@ The following packages are required:
 
 - rmarkdown
 
-Run $\texttt{make}$ in the terminal from the repository root. This produces $\texttt{report.html}$.
+Run `make` in the terminal from the project root. This will produce `report.html`.
 
 # Repo Contents
 
-- $\texttt{report.Rmd}$: report, including an intro, the relevant research question, data cleaning summary, table, figure, interpretation)
-- $\texttt{Makefile}$: rules for building the report
-- $\texttt{code/01\_clean\_data.R}$: reads/merges raw data and cleans data, adds urban/rural indicator
-- $\texttt{code/02\_create\_table.R}$: creates the table ($\texttt{output/table.rds}$)
--  $\texttt{code/03\_create\_figure.R}$ creates the figure ($\texttt{output/figure.png}$)
-- $\texttt{code/04\_render\_report.R}$ renders the report ($\texttt{report.html}$)
-- $\texttt{data/raw/}$ original County Health Rankings data (ranked and additional, by year)
-  - Data is separated into ranked and additional categories on the website, and I decided to merge these for each year.
-- $\texttt{data/derived/}$: cleaned dataset
-- $\texttt{output/}$: generated table and figure
+- `report.Rmd`: final report, including an introduction, the research questions, a data cleaning summary, the table, the figure, and interpretation
+- `Makefile`: rules for building the report
+- `code/01_clean_data.R`: reads and merges the raw data, cleans it, and adds the urban/rural indicator
+- `code/02_create_table.R`: creates the table (`output/table.rds`)
+- `code/03_create_figure.R`: creates the figure (`output/figure.png`)
+- `code/04_render_report.R`: renders the report (`report.html`)
+- `data/raw/`: original County Health Rankings data (ranked and additional, by year)
+  - The website splits the data into ranked and additional categories, so I merged these for each year.
+- `data/derived/`: cleaned dataset
+- `output/`: generated table and figure
 
 # Source
 
