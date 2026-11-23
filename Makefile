@@ -9,3 +9,7 @@ output/table.rds: code/02_create_table.R data/derived/project_data.csv
 
 output/figure.png: code/03_create_figure.R data/derived/project_data.csv
 	Rscript code/03_create_figure.R
+	
+.PHONY: install
+install: 
+	Rscript -e "renv::restore(prompt = FALSE)"

@@ -16,7 +16,6 @@ var_label(df_final) <- list(
 )
 
 table <- df_final %>%
-  filter(year == 2025) %>%
   select(area, infant_mortality_rate, percent_children_in_poverty.x, years_of_potential_life_lost_rate.x) %>%
   tbl_summary(by = area, statistic = all_continuous() ~ "{mean} ({sd})", digits = all_continuous() ~ 1, missing = "no") %>%
   add_p() %>%

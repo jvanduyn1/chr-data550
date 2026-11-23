@@ -24,6 +24,8 @@ The following packages are required:
 
 Run `make` in the terminal from the project root. This will produce `report.html`.
 
+To synchronize the package repository, run `make install` in the terminal from the project root. This will restore each project package to the version specified in `renv.lock`.
+
 # Repo Contents
 
 - `report.Rmd`: final report, including an introduction, the research questions, a data cleaning summary, the table, the figure, and interpretation
